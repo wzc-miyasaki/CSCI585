@@ -1,3 +1,28 @@
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+## User settings
+xcuserdata/
+
+## Xcode 8 and earlier
+*.xcscmblueprint
+*.xccheckout
+
+# General  AppleOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
 # Prerequisites
 *.d
 
@@ -30,3 +55,74 @@
 *.exe
 *.out
 *.app
+
+# CMake
+/build/
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+# **/CMakeFiles/
+
+CMakeScripts
+Testing
+
+Makefile
+# **/Makefile
+
+cmake_install.cmake
+*.cmake
+# **/cmake_install.cmake
+
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+
+# Ignore IDE-specific files (like for CLion, Visual Studio Code, etc.)
+.idea/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Temporary files
+*.log
+*.swp
+*.bak
+*.tmp
+*~
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
