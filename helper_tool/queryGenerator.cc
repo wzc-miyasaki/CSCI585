@@ -11,15 +11,26 @@ std::string generateInsertQuery(const std::vector<std::string>& columnNames, con
     }
     query += ") VALUES (";
     for (size_t i = 0; i < values.size(); ++i) {
-        query += "'" + values[i] + "'";
-        if (i < values.size() - 1) query += ", ";
+        
+        // if handling with a data value:
+        if (values[i][0] == '@'){
+            query += "TO_DATE('"; 
+            query += values[i].substr(1);   
+            query += "','YYYY-MM-DD')" ;
+        }
+        
+        else
+            query += "'" + values[i] + "'";
+
+        // if not last attribute, add comma
+        if (i < values.size() - 1) 
+            query += ", ";
     }
     query += ");";
     return query;
 }
 
 int main(int argc, char** argv) {
-    std::cout << "./query table_name  csv_file\n\n"  << std::endl;
     std::string tableName;
     std::string fileName;
     std::vector<std::string> columnNames;
