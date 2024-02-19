@@ -68,19 +68,12 @@ INSERT INTO BillingRecord (BILLING_ID, MED_ID, TOTAL_AMOUNT, BILL_DATE) VALUES (
 INSERT INTO BillingRecord (BILLING_ID, MED_ID, TOTAL_AMOUNT, BILL_DATE) VALUES ('16', '16', '86', '18-Feb-23');
 
 
-
-SELECT b.*, m.*, p.*
-FROM BillingRecord b
-INNER JOIN MedicalRecord m ON b.MED_ID = m.RECORD_ID
-INNER JOIN procedures p ON m.procedure_type_id = p.procedure_id;
-
-
 SELECT b.BILLING_ID, b.MED_ID, p.PROCEDURE_NAME, m.DURATION, b.TOTAL_AMOUNT AS cost, m.RECORD_DATE AS procedure_date, b.BILL_DATE
 FROM BillingRecord b
 INNER JOIN MedicalRecord m ON b.MED_ID = m.RECORD_ID
 INNER JOIN procedures p ON m.procedure_type_id = p.procedure_id;
 
 
-SELECT ROUND(AVG(b.total_amount), 3) AS average_income
-FROM BillingRecord b
-WHERE b.BILL_DATE BETWEEN TO_DATE('2023-02-18', 'YYYY-MM-DD') AND TO_DATE('2023-02-18', 'YYYY-MM-DD');
+SELECT SUM(b.total_amount) AS total_income 
+FROM BillingRecord b 
+WHERE b.BILL_DATE BETWEEN TO_DATE('2023-02-18', 'YYYY-MM-DD') AND TO_DATE('2023-02-18', 'YYYY-MM-DD')
