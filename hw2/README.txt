@@ -5,11 +5,16 @@ Student Name:   Zecheng Wang
 
 
 ### Livesql Link
-Q1 link:  https://livesql.oracle.com/apex/livesql/s/bb0900e773g0s4m19oxx0a80x
-Q2 link:  https://livesql.oracle.com/apex/livesql/s/bb4t9so2r7tdc6n5a5kv9f3cf
-Q3 link:  https://livesql.oracle.com/apex/livesql/s/bb1iggn11sjt5kfnrbater4lm
-Q4 link:  https://livesql.oracle.com/apex/livesql/s/bb1sglzhxs6km7xmgqo653xwf
+script link:    https://livesql.oracle.com/apex/livesql/s/bcdpf2lmf11hjfryb4vf4ygr9 
+Q1 link:  https://livesql.oracle.com/apex/livesql/s/bcdq02qzke77ioahk3lghgc9b
+Q2 link:  https://livesql.oracle.com/apex/livesql/s/bcdpf2lu0exvkt294ay4000ft
+Q3 link:  https://livesql.oracle.com/apex/livesql/s/bcdpbtrp4bvrkvtbc5nbeqqxh
+Q4 link:  https://livesql.oracle.com/apex/livesql/s/bcdpb6787b4lm596fqkcy3co9
 
+
+### script
+The first link provides the link to a script which will initialize the entire database, involving the table creation and data insertion. Make sure to run this script  
+before other four links. 
 
 ### Q1
 In this question, I created three tables with some dummy data:  
