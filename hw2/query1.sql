@@ -113,7 +113,8 @@ INSERT INTO BillingRecord (BILLING_ID, MED_ID, TOTAL_AMOUNT, BILL_DATE) VALUES (
 INSERT INTO BillingRecord (BILLING_ID, MED_ID, TOTAL_AMOUNT, BILL_DATE) VALUES ('15', '15', '100', '18-Feb-23');
 INSERT INTO BillingRecord (BILLING_ID, MED_ID, TOTAL_AMOUNT, BILL_DATE) VALUES ('16', '16', '86', '18-Feb-23');
 
-
+-- =======================================================================================================================
+-- =======================================================================================================================
 -- Q1 Answer 
 SELECT AVG(cost) AS average_cost, AVG(duration) AS average_duration
 FROM (
